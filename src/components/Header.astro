@@ -1,0 +1,33 @@
+---
+import { Image } from "astro:assets"
+import DarkIcon from "../images/moon.png"
+import LightIcon from "../images/sun.png"
+import ThemeButton from "./ThemeButton.vue"
+---
+
+<header class="flex justify-between items-center text-[#003049">
+  <h1 class="font-bold text-[32px]">Miko</h1>
+  <nav>
+    <ul class="flex items-center text-[]">
+      <li>Home</li>
+      <li>About</li>
+      <li>Project</li>
+      <li>Resume</li>
+    </ul>
+  </nav>
+  <!-- <div class="w-10 h-10 rounded-full">
+    <Image src={DarkIcon} alt="A bird sitting on a nest of eggs." />
+  </div>
+  <div class="w-10 h-10 rounded-full">
+    <Image src={LightIcon} alt="A bird sitting on a nest of eggs." />
+  </div> -->
+  <ThemeButton client:load />
+</header>
+<style>
+  h1 {
+    font-family: "Rubik", sans-serif;
+  }
+  ul {
+    font-family: "Rubik", sans-serif;
+  }
+</style>
